@@ -1,0 +1,12 @@
+# Arquivo: src/main/resources/application.yml
+
+server:
+  port: 8081
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # A URL correta, sem duplicação de código
+          issuer-uri: http://127.0.0.1:8080/realms/demo
